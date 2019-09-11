@@ -1,0 +1,51 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    color: #222222;
+}
+
+h1,
+h2 {
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: normal;
+    border-bottom: 1px solid #999999;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: #0645ad;
+}
+
+/* paragraphs */
+p a {
+    text-decoration: none;
+}
+p a:hover {
+    text-decoration: underline;
+}
+
+/* navigation */
+nav {
+
+}
+
+nav a {
+
+}
+
+.steve-jobs-page nav a {
+
+}

@@ -1,0 +1,101 @@
+html {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Abril Fatface', cursive;
+}
+
+h1 {
+    color: red;
+
+    font-size: 1.5em;
+    font-weight: 400;
+    font-style: italic;
+    font-variant: small-caps;
+    line-height: 3em;
+}
+
+h1.secondary {
+    color: green;
+}
+
+#first-paragraph {
+    font-weight: bold !important;
+}
+
+html body p.thin {
+    font-weight: normal !important;
+}
+
+p {
+    line-height: 2.25em;
+}
+
+p a {
+    color: orange;
+}
+
+
+
+nav a {
+    text-decoration: none;
+}
+
+nav > a {
+    color: gray;
+}
+
+nav div a {
+    color: blue;
+}
+
+.small {
+    font-size: 0.75em;
+}
+nav a[href="#"] {
+    font-weight: bold;
+}
+
+.small.thin {
+    font-size: 0.875em;
+}
+
+body p#first-paragraph.small.thin {
+    color: red;
+}
+
+p#first-paragraph.small.thin {
+    color: blue;
+}
+
+p#first-paragraph.small.thin {
+    color: yellow;
+}
+
+.red {
+    color: red;
+}
+
+.trans {
+    opacity: 0.5;
+}
+
+.trans.opaque {
+    opacity: 0.75;
+}
+
+.un, 
+a:hover,
+p a:hover {
+    text-decoration: underline;
+}
+
+a.un:hover,
+p a {
+    text-decoration: none;
+}
+
