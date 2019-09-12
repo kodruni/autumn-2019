@@ -1,0 +1,54 @@
+html {
+	font-size: 18px;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+article {
+  width: 50rem;
+  margin: 0 auto;
+}
+
+section {
+  padding: 0.5rem 2rem;
+}
+
+h1, h2 {
+  color: #23226c;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 240%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 180%;
+}
+
+p {
+  color: #555555;
+  line-height: 150%;
+  text-align: justify;
+}
+
+strong {
+  color: black;
+}
+
+em {
+  background-color: #d2d6ef;
+  font-style: normal;
+}
+
+a {
+  color: #9290c3;
+}
+
+.intro, .conclusion {
+  background-color: #d2d6ef;
+}
