@@ -10,6 +10,7 @@ html {
 body {
   width: 100vw;
   height: 100vh;
+  
   background: white url('img/bg.svg') center/cover no-repeat;
 }
 
@@ -20,8 +21,9 @@ body {
 
 .promo {
   width: 350px;
-  color: white;
   margin-top: 100px;
+
+  color: white;
 }
 
 .promo h1 {
@@ -29,9 +31,10 @@ body {
 }
 
 .silvestr {
-  width: 350px;
-  height: auto;
   position: absolute;
   left: 610px;
   top: 50px;
+
+  width: 350px;
+  height: auto;
 }
