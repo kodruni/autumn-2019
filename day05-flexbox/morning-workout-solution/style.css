@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: white url('img/bg.svg') center/cover no-repeat;
+}
+
+.container {
+  width: 960px;
+  margin: 2rem auto;
+}
+
+.promo {
+  width: 350px;
+  color: white;
+  margin-top: 100px;
+}
+
+.promo h1 {
+  font-weight: 900;
+}
+
+.silvestr {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  left: 610px;
+  top: 50px;
+}
