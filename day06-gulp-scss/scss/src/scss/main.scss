@@ -1,0 +1,21 @@
+@import 'variables/colors.scss';
+@import 'common/document.scss';
+@import 'common/navigation.scss';
+
+
+body {
+    display: flex;
+}
+
+
+
+main {
+
+    p {
+        margin: 3em;
+
+        a {
+            color: $light_gray;
+        }
+    }
+}

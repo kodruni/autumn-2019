@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files\cmder\bin;C:\Program Files\cmder\vendor\conemu-maximus5\ConEmu\Scripts;C:\Program Files\cmder\vendor\conemu-maximus5;C:\Program Files\cmder\vendor\conemu-maximus5\ConEmu;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\wampstack-7.1.29-0\php;C:\wampstack-7.1.29-0\mysql\bin;c:\xampp7.1\php;c:\xampp7.1\mysql\bin;C:\Program Files\TortoiseSVN\bin;c:\Program Files\cmder\;C:\Program Files\TortoiseGit\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Gource\cmd;C:\Program Files\Git\cmd;c:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\PuTTY\;C:\ProgramData\ComposerSetup\bin;C:\Users\jpola\AppData\Roaming\Python\Python37\Scripts;C:\Users\jpola\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\jpola\AppData\Local\Programs\Python\Python37-32\;C:\Users\jpola\AppData\Local\Microsoft\WindowsApps;C:\Users\jpola\AppData\Roaming\npm;C:\Users\jpola\AppData\Local\Yarn\bin;C:\Users\jpola\AppData\Roaming\Composer\vendor\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\share\vim\vim74;C:\Program Files\cmder\
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  8.12.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: c:\web\bootcamp\exercises\day06-gulp-scss\scss\package.json: Unexpected token } in JSON at position 458
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:304:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:315:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "project-name",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "browser-sync": "^2.26.7",
+      "del": "^3.0.0",
+      "gulp": "^4.0.0",
+      "gulp-autoprefixer": "^6.0.0",
+      "gulp-csso": "^3.0.1",
+      "gulp-htmlmin": "^5.0.1",
+      "gulp-sass": "^4.0.2",
+      "gulp-sourcemaps": "^2.6.4",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
