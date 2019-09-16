@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* padding-bottom: 82.8px; */ /* keep for fixed footer */
+}
+
+header,
+nav,
+article,
+footer {
+    padding: 2rem;
+}
+
+header {
+    background-color: #999999;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #cccccc;
+    color: #ffffff;
+    
+}
+
+/* fixed footer (optional) */
+footer.fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+
+nav {
+    color: #ffffff;
+    background-color: #F06543;
+}
+
+article h1 {
+    border-bottom: 2px solid #999999;
+}
+
