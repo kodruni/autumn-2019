@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url('/img/got-bg.jpg');
+    background-size: cover;
+    display: flex;
+}
+
+main {
+    padding: 1em;
+    flex-grow: 1;
+    background-color: rgba(0,0,0, 0.5);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    align-self: flex-end;
+}
+
+h2 {
+    text-align: right;
+}
