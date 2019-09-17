@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    What do you want to do with the product (headphones)?
+    <form method="post" action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php">
+
+        <input type="hidden" name="product_id" value="12345">
+
+        <div class="input">
+            <input type="text" name="greeting" value="Hello, world!">
+        </div>
+
+        <label for="biography_textarea">Write your bio</label><br>
+        <textarea name="biography" id="biography_textarea">Once upon a time...</textarea>
+        <br>
+
+        <label for="want_newsletter_checkbox">Check this</label>
+        <input type="hidden"   name="want_newsletter" value="no">
+        <input type="checkbox" name="want_newsletter" value="yes" id="want_newsletter_checkbox" checked>
+        <br>
+
+        <label for="gender_male">Male</label>
+        <input type="radio" name="gender" value="male" id="gender_male">
+        <label for="gender_female">Female</label>
+        <input type="radio" name="gender" value="female" id="gender_female">
+        <label for="gender_other">Other</label>
+        <input type="radio" name="gender" value="other" id="gender_other" checked>
+        <br>
+
+        <select name="nationality" id="">
+            <option value="cz">Czech</option>
+            <option value="sk">Slovak</option>
+            <option value="me">Montenegrian</option>
+        </select>
+
+        <br>
+        <label for="">First name:</label>
+        <input type="text" name="personal_info[first_name]" value="" placeholder="first name" autocomplete="off" required>
+        <input type="text" name="personal_info[last_name]" value="Rambo">
+        <input type="text" name="personal_info[address][city]" value="Prague" autofocus>
+        <input type="text" name="personal_info[age]" value="" pattern="\d+">
+
+        <br>
+
+        <input type="submit" name="submit" value="Save">
+
+        <input class="danger" type="submit" name="submit" value="Delete">
+
+    </form>
+
+</body>
+</html>

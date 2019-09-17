@@ -1,0 +1,33 @@
+.input {
+    border: 2px solid rgb(153, 153, 231);
+    padding: 0.25em;
+    border-radius: 0.125em;
+    display: flex;
+}
+
+.input input[type="text"] {
+    flex-grow: 1;
+    border-width: 0;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input[type="submit"] {
+    background-color: rgb(110, 167, 110);
+    color: white;
+    border-width: 0;
+    border-radius: 0.125em;
+    padding: 0.5em 1em;
+}
+
+input[type="submit"].danger {
+    background-color: rgb(185, 82, 82);
+}
+
+textarea {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input:invalid {
+    border: 1px solid red;
+}

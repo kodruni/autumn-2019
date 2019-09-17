@@ -58,3 +58,29 @@ section.characters {
     }
 
 }
+
+
+section.cast {
+
+    display: flex;
+
+    .image {
+        position: relative;
+        border: 1px solid orange;
+
+        img {
+            display: block;
+        }
+
+        > div {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,0,0,0.5);
+            color: white;
+            text-align: center;
+            padding: 0.5em;
+            width: 100%;
+        }
+    }
+}
