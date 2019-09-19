@@ -4,7 +4,10 @@
   "description": "Practice of Gulp & SCSS",
   "main": "index.js",
   "scripts": {
-    "build": "gulp build",
+    "create": "gulp structure",
+    "build": "gulp build_dev",
+    "build:prod": "gulp build_prod",
+    "publish": "gulp publish",
     "watch": "gulp watch"
   },
   "author": "The amazing me",
