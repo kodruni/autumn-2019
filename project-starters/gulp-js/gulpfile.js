@@ -121,7 +121,7 @@ function watchFiles(done) {
   gulp.watch("src/**/*.html", gulp.series(publishHtml, reload));
   gulp.watch("src/fonts/**/*", gulp.series(publishFonts, reload));
   gulp.watch("src/img/**/*", gulp.series(publishImages, reload));
-  gulp.watch("src/js/**/*", gulp.series(publishImages, reload));
+  gulp.watch("src/js/**/*", gulp.series(publishJS, reload));
   gulp.watch("src/scss/**/*.scss", gulp.series(compileScss, reload));
 }
  
