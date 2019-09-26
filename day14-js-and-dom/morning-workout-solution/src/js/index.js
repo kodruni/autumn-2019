@@ -1,3 +1,7 @@
+const daysInMonth = [
+  null, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31,
+];
+
 const nidIsValid = (nid) => {
   const intNID = parseInt(nid, 10);
 
@@ -14,7 +18,6 @@ const nidIsValid = (nid) => {
   }
 
   const month = parseInt(nid[2] + nid[3], 10);
-  console.log(month);
   if (month < 51) {
     if (month < 1 || month > 12) {
       return false;
@@ -24,7 +27,12 @@ const nidIsValid = (nid) => {
   }
 
   const day = parseInt(nid[4] + nid[5], 10);
-  if (day < 1 || day > 31) {
+  if (day < 1 || day > daysInMonth[month]) {
+    return false;
+  }
+
+  const year = parseInt(nid[0] + nid[1], 10);
+  if (year % 4 !== 0 && month === 2 && day === 29) {
     return false;
   }
 
