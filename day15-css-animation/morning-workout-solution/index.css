@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  display: flex;
+  width: 60%;
+  margin: 5rem auto;
+  align-items: center;
+}
+
+.container > img {
+  width: 200px;
+  height: 200px;
+}
+
+.message {
+  line-height: 150%;
+  margin-left: 2rem;
+  transition: 2s;
+}
+
+.hidden {
+  opacity: 0;
+}
