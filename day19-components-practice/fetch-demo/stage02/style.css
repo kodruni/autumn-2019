@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 20rem;
+  margin: 5rem auto;
+}
+
+.todo {
+  background-color: lightgray;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.todo__name {
+  font-weight: bold;
+}
