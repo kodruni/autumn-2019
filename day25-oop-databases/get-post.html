@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GET & POST</title>
+</head>
+<body>
+
+    <a href="get-post.php?page=list&orderby=name&limit=10">List of movies (ordered by name)</a>
+    <br>
+
+    <a href="get-post.php?page=list&orderby=rating&limit=10">List of movies (ordered by rating)</a>
+    <br>
+
+    <a href="get-post.php?page=list&orderby=rating&limit=1000">List of movies (ordered by rating, 1000 on page)</a>
+
+    <form action="get-post.php?page=submit&user=1" method="post">
+
+        <input type="text" name="name" placeholder="name">
+        <br>
+        <input type="text" name="age" placeholder="age">
+        <br>
+        <label for="">
+            <input type="checkbox" name="married" value="1">
+            married
+        </label>
+        <br>
+        <input type="submit" value="send">
+
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+students
+-----
+id: integer
+name: short string
+scholarship: boolean
+dob: date
+gpa: decimal
+nationality_id: integer
+address: short string
+dorm: boolean
+medical_issues: long string
+mentor_id: integer
+year_of_study_id: integer
+department_id: integer
+graduation_day: date
+email: short string
+assistant_status: boolean
+insurance_number: short string
+* gender: short string
+married: boolean
+phone_number: short string
+* subject: short string
+
+nationalities
+-------------
+id: integer
+name: short string 
+
+years_of_study
+--------------
+id:
+name:
+level:
+
+departments
+-----------
+id:
+name:
