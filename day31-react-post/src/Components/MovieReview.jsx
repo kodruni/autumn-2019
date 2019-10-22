@@ -35,23 +35,33 @@ export default class MovieReview extends React.Component {
                 'Content-type': 'application/json'
             },
             body: JSON.stringify({
-                "movie_id": 489,
+                "movie_id": this.movie_id,
                 "user_id": 1,
                 "text": this.state.text,
-                "rating": 6
+                "rating": this.state.rating
             })
         })
     }
 
     handleTextChange = (event) => {
+        let text = event.target.value.replace('fuck', ':)');
+
         this.setState({
-            text: event.target.value
+            text: text
         })
     }
 
     handleRatingChange = (event) => {
+        let value = Math.max(0, Math.min(10, event.target.value));
+
         this.setState({
-            rating: event.target.value
+            rating: value
+        })
+    }
+
+    handleChange = (event) => {
+        this.setState({
+            [event.target.name]: event.target.value
         })
     }
 
@@ -79,11 +89,11 @@ export default class MovieReview extends React.Component {
                     <br />
                     <br />
                     <label htmlFor="">Rating</label><br />
-                    <input type="number" name="rating" value={ this.state.rating } onChange={ this.handleRatingChange } />
+                    <input type="text" name="rating" value={ this.state.rating } onChange={ this.handleRatingChange } />
                     <br />
                     <br />
                     <input type="submit" value="Submit" />
-                    
+
                 </form>
 
                 <MovieFavorite movie_id={ this.movie_id } />
