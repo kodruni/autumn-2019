@@ -9,7 +9,8 @@ export default class MovieReview extends React.Component {
 
         this.state = {
             movie_data: null,
-            text: ''
+            text: '',
+            rating: ''
         }
     }
 
@@ -48,6 +49,12 @@ export default class MovieReview extends React.Component {
         })
     }
 
+    handleRatingChange = (event) => {
+        this.setState({
+            rating: event.target.value
+        })
+    }
+
     render() {
 
         let movie = 'Loading...';
@@ -67,9 +74,16 @@ export default class MovieReview extends React.Component {
 
                 <form action="" method="post" onSubmit={ this.handleSubmit }>
 
-                    <input type="text" name="text" value={ this.state.text } onChange={ this.handleTextChange } />
-
+                    <label htmlFor="">Text:</label><br />
+                    <textarea name="text" cols="30" rows="10" value={ this.state.text } onChange={ this.handleTextChange }></textarea>
+                    <br />
+                    <br />
+                    <label htmlFor="">Rating</label><br />
+                    <input type="number" name="rating" value={ this.state.rating } onChange={ this.handleRatingChange } />
+                    <br />
+                    <br />
                     <input type="submit" value="Submit" />
+                    
                 </form>
 
                 <MovieFavorite movie_id={ this.movie_id } />

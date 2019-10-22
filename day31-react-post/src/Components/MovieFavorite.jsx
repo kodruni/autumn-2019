@@ -1,5 +1,21 @@
 import React from 'react';
 
+/**
+ * 1. App component renders MovieReview component
+ * 2. MovieReview renders FavoriteMovie component
+ * 3. As FavoriteMovie component is being mounted to the page, it runs an AJAX request with fetch
+ * 4. While the request is on its way the component goes on rendering itself.
+ * 5. In render() it now has the DEFAULT value of its state.
+ * 6. this.state.favorite === null so render displays "Loading..." on the button
+ * 
+ * 7. response comes back
+ * 8. we parse it as JSON
+ * 9. we change the state with this.setState using the value that came in the response
+ * 10. setState automatically triggers a re-render
+ * 11. in render() we now have the updated value of this.state.favorite
+ * 12. based on its value we either display 'Unfavorite this movie' or 'Favorite this movie' on the button
+ * 13. THE END
+ */
 export default class MovieFavorite extends React.Component {
     constructor(props) {
         super(props);
