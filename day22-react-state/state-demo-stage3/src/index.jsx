@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Week from './week/week.jsx';
 
 import './index.scss';
 import './index.html';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
       <>

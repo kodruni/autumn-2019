@@ -12,7 +12,7 @@ export default class Week extends React.Component {
       forecast: [],
     };
   }
-  
+
   componentDidMount() {
     fetch('http://bootcamp.podlomar.org/api/weather')
       .then(resp => resp.json())
@@ -29,7 +29,7 @@ export default class Week extends React.Component {
         <div className="week-forecast">
           <div className="spinner" />
         </div>
-      );    
+      );
     }
 
     return (
@@ -40,9 +40,9 @@ export default class Week extends React.Component {
               key={day.weekday}
               onSelect={this.handleSelect}
               selected={day.weekday === this.state.selectedDay}
-              weekday={day.weekday} 
-              weather={day.weather} 
-              tempDay={day.tempDay} 
+              weekday={day.weekday}
+              weather={day.weather}
+              tempDay={day.tempDay}
               tempNight={day.tempNight}
             />
           ))
